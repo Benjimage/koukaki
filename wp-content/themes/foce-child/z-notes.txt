@@ -1,0 +1,7 @@
+création d'un dossier sass > theme.scss & _frontpage.scss
+
+Ajout d'un  hook de mise en file d'attente des style vers theme.scss dans functions.php
+
+copie de front-page.php dans foce-child + intégration <iframe> + path to video dans <banner>
+
+Adresse de la vidéo en ligne : https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/DWP+IW_P9+Studio+d'animation/Studio+Koukaki-vide%CC%81o+header+sans+son+(1).mp4
