@@ -6,7 +6,6 @@ get_header();
     <main id="primary" class="site-main">
         <section class="banner">
             <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
-            <iframe src="<?php echo get_template_directory_uri() . 'https://localhost/1-home/ProjetOC/6-Koukaki/wp-content/uploads/2024/09/StudioKoukaki-videoheadersansson1.mp4;' ?>" frameborder="0"></iframe>
         </section>
         <section id="#story" class="story">
             <h2>L'histoire</h2>
