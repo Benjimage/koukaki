@@ -1,0 +1,12 @@
+figure img {
+    animation: rocking-cat 4s ease-in-out infinite /* alternate */;
+  }
+  
+@keyframes rocking-cat {
+0%{transform: rotate(0deg);}
+25%{transform: rotate(-20deg);}
+50%{transform: rotate(0deg);}
+75%{transform: rotate(10deg);}
+100%{transform: rotate(0deg);}
+
+}
