@@ -35,70 +35,64 @@
     transform: rotate(360deg);
   }
 }
-figure img {
-  animation: rocking-cat 4s ease-in-out infinite;
+.banner img {
+  transform-origin: 0% 50%;
+  animation: rocking-logo 16s linear infinite;
 }
 
-@keyframes rocking-cat {
+@keyframes rocking-logo {
   0% {
     transform: rotate(0deg);
   }
-  25% {
-    transform: rotate(-20deg);
+  10% {
+    transform: rotate(-4deg);
+    transform: translateX(-2px);
+    transform: translateY(-2px);
+  }
+  20% {
+    transform: translateY(-2px);
+    transform: rotate(2deg);
+  }
+  30% {
+    transform: rotate(-2deg);
+    transform: translateX(4px);
+  }
+  40% {
+    transform: rotate(3deg);
+    transform: translateY(-4px);
   }
   50% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  70% {
     transform: rotate(0deg);
   }
-  75% {
-    transform: rotate(10deg);
+  80% {
+    transform: rotate(4deg);
+  }
+  90% {
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(0deg);
   }
 }
-/* .story h2::after {
-        transform-origin: 77px 77px;
-        animation:clockwise-flower 3s linear infinite reverse; 
-      }
-#studio h2::before {
-        transform-origin: 101.5px 99.5px;
-        animation: clockwise-flower 3s linear infinite;
-}
-
-#studio h2::after {
-        transform-origin: 54.5px 54.5px;
-        animation:clockwise-flower 3s linear infinite reverse; 
-} 
-.site-footer ul::after {
-        animation:clockwise-flower 6s linear infinite reverse; 
-}
-.site-footer::before {
-        transform-origin: 77px 77px;
-        animation:clockwise-flower 3s linear infinite; 
-}
-.story__article::after,
-.site-footer::after {
-        animation: clockwise-flower 3s linear infinite; 
-    }
-@keyframes clockwise-flower{
-      0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      } */
-/* figure img {
-        animation: rocking-cat 4s ease-in-out infinite ;
-      }
-
-@keyframes rocking-cat {
+/* @keyframes rocking-logo {
   0%{transform: rotate(0deg);}
-  25%{transform: rotate(-20deg);}
-  50%{transform: rotate(0deg);}
-  75%{transform: rotate(10deg);}
-  100%{transform: rotate(0deg);}
+  10%{transform: rotate(-4deg);}
+  20%{transform: rotate(2deg);}
+  30%{transform: rotate(-2deg);}
+  40%{transform: rotate(3deg);}
+  50%{transform: rotate(-1deg);}
+  60%{transform: rotate(2deg);}
+  70%{transform: rotate(0deg);}
+  80%{transform: rotate(4deg);}
+  90%{transform: rotate(0deg);}
+  100%{transform: rotate(1deg);}
 
-} */
+  } */
 
 /*# sourceMappingURL=theme.css.map */
