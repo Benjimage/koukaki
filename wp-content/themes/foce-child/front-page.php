@@ -5,8 +5,13 @@ get_header();
 
     <main id="primary" class="site-main">
         <section class="banner">
+            <div class="video-box">
+            <video id="koukakiVideo" autoplay muted loop >
+                <source src="<?php echo get_template_directory_uri() .'/assets/video/koukaki-video.mp4';?>" type="video/mp4">
+                votre navigateur ne prend pas en charge la vidéo
+            </video>
+            </div>
             <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
-            
         </section>
         <section id="#story" class="story">
             <h2>L'histoire</h2>
