@@ -1,3 +1,5 @@
+@import 'keyframes';
+
 .story h2::after {
     transform-origin: 77px 77px;
     animation:clockwise-flower 3s linear infinite reverse; 
@@ -21,11 +23,3 @@
 .site-footer::after {
     animation: clockwise-flower 3s linear infinite; 
 }
-@keyframes clockwise-flower{
-  0% {
-      transform: rotate(0deg);
-    }
-  100% {
-      transform: rotate(360deg);
-    }
-  }

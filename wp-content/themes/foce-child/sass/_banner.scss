@@ -1,0 +1,20 @@
+@import 'keyframes';
+.banner{
+  position: relative;
+  animation:fromtop 1s cubic-bezier(.5,.01,.48,.69);
+
+  & img {
+    position:relative;
+    opacity: 0;
+    animation: frombottom 1s cubic-bezier(.57,.14,.38,.61)forwards, waving 6s linear 0.8s infinite ;
+    }
+}
+  
+#koukakiVideo {
+    position: absolute;
+    left:0;
+    top: 0;
+    @media (max-width:996px){
+      display: none;
+    }
+  }

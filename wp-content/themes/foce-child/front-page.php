@@ -7,7 +7,7 @@ get_header();
         <section class="banner">
             <div class="video-box">
             <video id="koukakiVideo" autoplay muted loop >
-                <source src="<?php echo get_template_directory_uri() .'/assets/video/koukaki-video.mp4';?>" type="video/mp4">
+                <source src="<?php echo get_template_directory_uri() .'/assets/video/koukaki-video.mp4'; ?>" type="video/mp4">
                 votre navigateur ne prend pas en charge la vidéo
             </video>
             </div>

@@ -1,11 +1,2 @@
-.banner {
-    animation:background-down 20s;
-}
-@keyframes background-down {
-    from {
-        transform: translateY(0%);
-    }
-    to {
-        transform: translateY(100%); 
-    }
-}
+@import 'keyframes';
+ 
