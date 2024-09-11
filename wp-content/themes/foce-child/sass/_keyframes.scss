@@ -16,7 +16,7 @@
   }  
 
 @keyframes frombottom{
-    from {bottom:-300px; opacity:0;} 
+    from {bottom:-400px; opacity:0;} 
     to {bottom:0; opacity:1;}
   }
 
@@ -24,3 +24,7 @@
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
   }
+@keyframes title {
+    from {opacity:0;}
+    to { opacity:1;}
+}

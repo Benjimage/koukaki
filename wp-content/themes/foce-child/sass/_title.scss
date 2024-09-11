@@ -1,0 +1,20 @@
+@import 'keyframes';
+
+/* #studio h2,
+#place h3, 
+.story h2,
+.main-character h3 {
+    position: relative;
+    animation: title 4s linear  forwards; 
+    opacity: 0;
+} */
+.story h2::before {
+    visibility: visible;
+    /* border:1px solid red; */
+    opacity: 1;
+}
+/* .story-title-background {
+    position: absolute;
+    width: 500px;
+    top:0;
+} */

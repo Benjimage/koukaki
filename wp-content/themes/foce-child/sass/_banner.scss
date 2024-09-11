@@ -1,14 +1,18 @@
 @import 'keyframes';
 .banner{
   position: relative;
-  animation:fromtop 1s cubic-bezier(.5,.01,.48,.69);
+  
+  animation:fromtop 1.2s  linear;
 
   & img {
     position:relative;
-    opacity: 0;
-    animation: frombottom 1s cubic-bezier(.57,.14,.38,.61)forwards, waving 6s linear 0.8s infinite ;
+    
+      @media (min-width:996px) {
+        opacity: 0;
+        animation: frombottom 1s  linear 0.2s 1 forwards, waving 6s linear 1.2s infinite ;
+      }
     }
-}
+  }
   
 #koukakiVideo {
     position: absolute;
