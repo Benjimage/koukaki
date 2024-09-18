@@ -1,15 +1,14 @@
-@import 'keyframes';
 .banner{
   position: relative;
   
-  animation:fromtop 1.2s  linear;
+  animation:fromtop 1.5/* .2 */s  linear;
 
   & img {
     position:relative;
     
       @media (min-width:996px) {
         opacity: 0;
-        animation: frombottom 1s  linear 0.2s 1 forwards, waving 6s linear 1.2s infinite ;
+        animation: frombottom 1.1s  linear 0.2s 1 forwards, waving 6s linear 1.2s infinite ;
       }
     }
   }

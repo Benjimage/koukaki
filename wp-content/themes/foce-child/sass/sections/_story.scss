@@ -1,0 +1,13 @@
+.story,
+.story__article,
+.story h2,
+.story__article::before,
+.story h2::before {
+    animation: backtotop 1.5s  ease-in-out /* 0.2s */ 1 forwards, fade-in 0.2s linear forwards;
+}
+
+.story__article > p {
+    opacity: 1;
+    animation: fakedown 1s  cubic-bezier(0,.46,.66,.99);
+}
+

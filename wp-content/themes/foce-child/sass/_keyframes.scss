@@ -1,3 +1,4 @@
+/*Keyframes for banner*/
 @keyframes waving {
     0% { transform:  translate(0%, 0%) rotate(0deg); }
     15% { transform: translate(1%, 1%) rotate(-1deg); }
@@ -9,25 +10,33 @@
     80% { transform:  translate(-2%, -2%) rotate(-1deg); }
     100% { transform:  translate(0%, 0%) rotate(0deg); }
   }
-
 @keyframes fromtop{
     from {top:-300px; opacity:0;}  
     to {top:0; opacity:1} 
   }  
-
-@keyframes frombottom{
+  @keyframes frombottom{
     from {bottom:-400px; opacity:0;} 
     to {bottom:0; opacity:1;}
   }
-@keyframes text-down {
-  from {top:900px; opacity:0;}  
-  to {top:1106px; opacity:1} 
-}  
 
+
+/*Keyframes for story*/
+@keyframes backtotop{
+    from {bottom:-100px; opacity:0;} 
+    to {bottom:0; opacity:1;}
+  }
+@keyframes fakedown{
+    from {transform:  translateY(-400px)}  
+    to {transform:  translateY(0%)} 
+  }  
+
+
+/*Keyframes for flowers  */
 @keyframes clockwise-flower{
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
   }
+/*  */
 @keyframes title {
     from {opacity:0;}
     to { opacity:1;}

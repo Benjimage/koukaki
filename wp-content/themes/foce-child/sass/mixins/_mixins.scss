@@ -1,3 +1,9 @@
-@mixin border-repair-element {
+@mixin border-red {
     border: 1px solid red;
+}
+@mixin border-blue {
+    border: 1px solid blue;
+}
+@mixin border-white {
+    border: 1px solid white;
 }

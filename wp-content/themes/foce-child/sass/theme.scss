@@ -1,7 +1,17 @@
-@import "flowers";
-@import "banner";
-@import "story";
+/* ======Import animations====== */
+
 @import "keyframes";
-@import "studio";
+@import "flowers";
+
+/* ======Import sections====== */
+
+@import "sections/banner";
+@import "sections/story";
+@import "sections/studio";
+@import "sections/place";
+
+/* ======Import ??? ====== */
 
 /* @import "title"; */
+/* @import ""; */
+@import "mixins/mixins";

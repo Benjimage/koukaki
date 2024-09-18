@@ -1,3 +1,5 @@
+/* ======Import animations====== */
+/*Keyframes for banner*/
 @keyframes waving {
   0% {
     transform: translate(0%, 0%) rotate(0deg);
@@ -47,16 +49,26 @@
     opacity: 1;
   }
 }
-@keyframes text-down {
+/*Keyframes for story*/
+@keyframes backtotop {
   from {
-    top: 900px;
+    bottom: -100px;
     opacity: 0;
   }
   to {
-    top: 1106px;
+    bottom: 0;
     opacity: 1;
   }
 }
+@keyframes fakedown {
+  from {
+    transform: translateY(-400px);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+/*Keyframes for flowers  */
 @keyframes clockwise-flower {
   from {
     transform: rotate(0deg);
@@ -65,6 +77,94 @@
     transform: rotate(360deg);
   }
 }
+/*  */
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*Keyframes for banner*/
+@keyframes waving {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  15% {
+    transform: translate(1%, 1%) rotate(-1deg);
+  }
+  25% {
+    transform: translate(1%, 0%) rotate(1deg);
+  }
+  35% {
+    transform: translate(2%, -2%) rotate(-1deg);
+  }
+  45% {
+    transform: translate(0%, -2%) rotate(2deg);
+  }
+  60% {
+    transform: translate(2%, -2%) rotate(-2deg);
+  }
+  70% {
+    transform: translate(-2%, 0%) rotate(2deg);
+  }
+  80% {
+    transform: translate(-2%, -2%) rotate(-1deg);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes fromtop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes frombottom {
+  from {
+    bottom: -400px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+/*Keyframes for story*/
+@keyframes backtotop {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@keyframes fakedown {
+  from {
+    transform: translateY(-400px);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+/*Keyframes for flowers  */
+@keyframes clockwise-flower {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*  */
 @keyframes title {
   from {
     opacity: 0;
@@ -102,84 +202,10 @@
   animation: clockwise-flower 3s linear infinite;
 }
 
-@keyframes waving {
-  0% {
-    transform: translate(0%, 0%) rotate(0deg);
-  }
-  15% {
-    transform: translate(1%, 1%) rotate(-1deg);
-  }
-  25% {
-    transform: translate(1%, 0%) rotate(1deg);
-  }
-  35% {
-    transform: translate(2%, -2%) rotate(-1deg);
-  }
-  45% {
-    transform: translate(0%, -2%) rotate(2deg);
-  }
-  60% {
-    transform: translate(2%, -2%) rotate(-2deg);
-  }
-  70% {
-    transform: translate(-2%, 0%) rotate(2deg);
-  }
-  80% {
-    transform: translate(-2%, -2%) rotate(-1deg);
-  }
-  100% {
-    transform: translate(0%, 0%) rotate(0deg);
-  }
-}
-@keyframes fromtop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes frombottom {
-  from {
-    bottom: -400px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-@keyframes text-down {
-  from {
-    top: 900px;
-    opacity: 0;
-  }
-  to {
-    top: 1106px;
-    opacity: 1;
-  }
-}
-@keyframes clockwise-flower {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes title {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+/* ======Import sections====== */
 .banner {
   position: relative;
-  animation: fromtop 1.2s linear;
+  animation: fromtop 1.5 s linear;
 }
 .banner img {
   position: relative;
@@ -187,7 +213,7 @@
 @media (min-width: 996px) {
   .banner img {
     opacity: 0;
-    animation: frombottom 1s linear 0.2s 1 forwards, waving 6s linear 1.2s infinite;
+    animation: frombottom 1.1s linear 0.2s 1 forwards, waving 6s linear 1.2s infinite;
   }
 }
 
@@ -208,88 +234,14 @@
 .story h2,
 .story__article::before,
 .story h2::before {
-  animation: frombottom 1s linear 0.2s 1 forwards, fade-in 1s linear forwards;
+  animation: backtotop 1.5s ease-in-out 1 forwards, fade-in 0.2s linear forwards;
 }
 
 .story__article > p {
-  visibility: visible;
+  opacity: 1;
+  animation: fakedown 1s cubic-bezier(0, 0.46, 0.66, 0.99);
 }
 
-@keyframes waving {
-  0% {
-    transform: translate(0%, 0%) rotate(0deg);
-  }
-  15% {
-    transform: translate(1%, 1%) rotate(-1deg);
-  }
-  25% {
-    transform: translate(1%, 0%) rotate(1deg);
-  }
-  35% {
-    transform: translate(2%, -2%) rotate(-1deg);
-  }
-  45% {
-    transform: translate(0%, -2%) rotate(2deg);
-  }
-  60% {
-    transform: translate(2%, -2%) rotate(-2deg);
-  }
-  70% {
-    transform: translate(-2%, 0%) rotate(2deg);
-  }
-  80% {
-    transform: translate(-2%, -2%) rotate(-1deg);
-  }
-  100% {
-    transform: translate(0%, 0%) rotate(0deg);
-  }
-}
-@keyframes fromtop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes frombottom {
-  from {
-    bottom: -400px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-@keyframes text-down {
-  from {
-    top: 900px;
-    opacity: 0;
-  }
-  to {
-    top: 1106px;
-    opacity: 1;
-  }
-}
-@keyframes clockwise-flower {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes title {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /*Temporary-section: oscars_nomination */
 .oscars {
   position: relative;
@@ -323,6 +275,35 @@
   font-size: 2.75rem;
 }
 
+/* .story{
+    #place {
+        border: 1px solid blue;
+
+        display: flex;
+        background-image: url("./assets/images/lieu-bg.png");
+        width: 100%;
+        min-height: 699px;
+        background-size: cover;
+        h3 {
+          background-image: url("./assets/images/orange_place_bg.png");
+          margin-bottom: -1em;
+        }
+        > div {
+          max-width: 580px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          margin-left: 6em;
+          p {
+            padding-left: 5em;
+          }
+        }
+      }
+} 
+ */
+/* ======Import ??? ====== */
 /* @import "title"; */
+/* @import ""; */
 
 /*# sourceMappingURL=theme.css.map */
