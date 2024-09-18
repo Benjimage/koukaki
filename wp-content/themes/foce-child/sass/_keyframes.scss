@@ -19,6 +19,10 @@
     from {bottom:-400px; opacity:0;} 
     to {bottom:0; opacity:1;}
   }
+@keyframes text-down {
+  from {top:900px; opacity:0;}  
+  to {top:1106px; opacity:1} 
+}  
 
 @keyframes clockwise-flower{
     from {transform: rotate(0deg);}

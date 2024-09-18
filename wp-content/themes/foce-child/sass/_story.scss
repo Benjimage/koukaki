@@ -1,0 +1,12 @@
+.story,
+.story__article,
+.story h2,
+.story__article::before,
+.story h2::before {
+    animation: frombottom 1s  linear 0.2s 1 forwards, fade-in 1s linear forwards;
+}
+
+.story__article > p {
+    visibility: visible;
+}
+

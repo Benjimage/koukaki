@@ -1,4 +1,4 @@
-@import 'keyframes';
+/* @import 'keyframes'; */
 
 /* #studio h2,
 #place h3, 
@@ -8,11 +8,11 @@
     animation: title 4s linear  forwards; 
     opacity: 0;
 } */
-.story h2::before {
+/* .story h2::before {
     visibility: visible;
-    /* border:1px solid red; */
+    border:1px solid red;
     opacity: 1;
-}
+} */
 /* .story-title-background {
     position: absolute;
     width: 500px;

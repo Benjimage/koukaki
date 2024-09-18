@@ -7,13 +7,13 @@ get_header();
         <section class="banner">
             <div class="video-box">
             <video id="koukakiVideo" autoplay muted loop >
-                <source src="<?php echo get_template_directory_uri() .'/assets/video/koukaki-video.mp4'; ?>" type="video/mp4">
+                <source src="<?php echo get_stylesheet_directory_uri() .'/assets/video/koukaki-video.mp4'; ?>" type="video/mp4">
                 votre navigateur ne prend pas en charge la vidéo
             </video>
             </div>
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
         </section>
-        <section id="#story" class="story">
+        <section id="story" class="story">    <!-- # en trop ?  -->
             <h2>L'histoire</h2>
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>
@@ -71,9 +71,9 @@ get_header();
                 <p>Avec une créativité et une capacité d’innovation mondialement reconnues, une expertise éditoriale et commerciale à la pointe de son industrie, le Studio Koukaki se positionne comme un acteur incontournable dans un marché en forte croissance. Koukaki construit chaque année de véritables succès et capitalise sur de puissantes marques historiques. Cette année, il vous présente “Fleurs d’oranger et chats errants”.</p>
             </div>
         </section>
-        <section class="oscar">
-
-        </section>
+        
+        <?php get_template_part('templates-parts/oscars')?>
+        
     </main><!-- #main -->
 
 <?php

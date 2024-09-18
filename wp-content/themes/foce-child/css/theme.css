@@ -47,6 +47,16 @@
     opacity: 1;
   }
 }
+@keyframes text-down {
+  from {
+    top: 900px;
+    opacity: 0;
+  }
+  to {
+    top: 1106px;
+    opacity: 1;
+  }
+}
 @keyframes clockwise-flower {
   from {
     transform: rotate(0deg);
@@ -141,6 +151,16 @@
     opacity: 1;
   }
 }
+@keyframes text-down {
+  from {
+    top: 900px;
+    opacity: 0;
+  }
+  to {
+    top: 1106px;
+    opacity: 1;
+  }
+}
 @keyframes clockwise-flower {
   from {
     transform: rotate(0deg);
@@ -175,11 +195,24 @@
   position: absolute;
   left: 0;
   top: 0;
+  object-fit: cover;
 }
 @media (max-width: 996px) {
   #koukakiVideo {
     display: none;
   }
+}
+
+.story,
+.story__article,
+.story h2,
+.story__article::before,
+.story h2::before {
+  animation: frombottom 1s linear 0.2s 1 forwards, fade-in 1s linear forwards;
+}
+
+.story__article > p {
+  visibility: visible;
 }
 
 @keyframes waving {
@@ -231,6 +264,16 @@
     opacity: 1;
   }
 }
+@keyframes text-down {
+  from {
+    top: 900px;
+    opacity: 0;
+  }
+  to {
+    top: 1106px;
+    opacity: 1;
+  }
+}
 @keyframes clockwise-flower {
   from {
     transform: rotate(0deg);
@@ -247,24 +290,39 @@
     opacity: 1;
   }
 }
-/* #studio h2,
-#place h3, 
-.story h2,
-.main-character h3 {
-    position: relative;
-    animation: title 4s linear  forwards; 
-    opacity: 0;
-} */
-.story h2::before {
-  visibility: visible;
-  /* border:1px solid red; */
-  opacity: 1;
+/*Temporary-section: oscars_nomination */
+.oscars {
+  position: relative;
+  padding-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 0;
+  justify-content: center;
+  align-items: center;
+}
+.oscars img {
+  height: 100%;
 }
 
-/* .story-title-background {
-    position: absolute;
-    width: 500px;
-    top:0;
-} */
+.nomination {
+  margin-top: -44px;
+}
+
+.oscars__title {
+  position: relative;
+}
+.oscars__title img {
+  height: 100%;
+}
+.oscars__title h3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 3.2rem;
+  text-align: left;
+  font-size: 2.75rem;
+}
+
+/* @import "title"; */
 
 /*# sourceMappingURL=theme.css.map */
